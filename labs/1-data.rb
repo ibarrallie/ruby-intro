@@ -15,3 +15,13 @@
 # rand(1..6)
 # Log output to the screen with puts:
 # puts "Hello, world"
+
+die_one = rand(1..6)
+die_two = rand(1..6)
+
+puts die_one
+puts die_two
+
+total = die_one + die_two 
+
+puts die_one + die_two
