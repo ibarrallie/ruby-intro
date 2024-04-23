@@ -19,9 +19,9 @@
 die_one = rand(1..6)
 die_two = rand(1..6)
 
-puts die_one
-puts die_two
+puts "the first die is... #{die_one}"
+puts "the second die is... #{die_two}"
 
 total = die_one + die_two 
 
-puts die_one + die_two
+puts "the total is... #{die_one + die_two}"

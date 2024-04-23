@@ -15,3 +15,13 @@
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html
+
+#create a shopping list for me
+my_list = ["apples", "ice cream", "yogurt"]
+#create a shopping list for my fried
+her_list = ["apples", "grapes"]
+#combine the two lists into a single list
+our_list = my_list + her_list
+#sort the results alphabetically and write it to the screen, showing same itmes once
+puts our_list
+#display each list item with the word "buy"
