@@ -8,10 +8,6 @@ response = Net::HTTP.get(uri)
 bitcoin_data = JSON.parse(response)
 # ----------------------
 
-# To run this code, be sure your current working directory
-# is the same as where this file is located and then run:
-# ruby 4-hashes.rb
-
 # EXERCISE
 # Ask the user for the current amount of Bitcoin that they own.
 # Using the Ruby hash `bitcoin_data`, display a summary of

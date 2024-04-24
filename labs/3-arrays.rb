@@ -22,6 +22,14 @@ my_list = ["apples", "ice cream", "yogurt"]
 her_list = ["apples", "grapes"]
 #combine the two lists into a single list
 our_list = my_list + her_list
-#sort the results alphabetically and write it to the screen, showing same itmes once
-puts our_list
+#sort the results alphabetically  
+sorted_list = our_list.sort
+#show same items once
+unique_list = sorted_list.uniq
+#or all at once! (also interesting to note you can do multiple .___ at the end)
+unique_list = (our_list).uniq.sort
 #display each list item with the word "buy"
+puts "Buy #{unique_list[0]}"
+puts "Buy #{unique_list[1]}"
+puts "Buy #{unique_list[2]}"
+puts "Buy #{unique_list[3]}"
