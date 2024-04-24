@@ -24,5 +24,20 @@ bitcoin = gets.chomp
 # 2. The value will be a string, so you'll want to convert it to a Float.
 bitcoin = bitcoin.to_f
 
+#write this amount to screen
+puts "You have #{bitcoin} bitcoin"
+
 # 3. inspect the bitcoin_data hash
-# puts bitcoin_data
+#2:25 in the lecture will get me to how to do this -- we look at the two greatest level keys to see what we need; we want the bpi one
+#then we want the key USD and the rate_float
+#get the conversion rate
+conversion_rate = bitcoin_data["bpi"]["USD"]["rate_float"]
+
+#write the conversion rate
+puts "The current conversion rate is: #{conversion_rate}"
+
+#calculate the user amount in US dollars
+converted_amount = bitcoin * conversion_rate
+
+#write the amount of money the user has in bitcoin
+puts "You have #{converted_amount}"
