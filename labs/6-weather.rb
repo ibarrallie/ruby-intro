@@ -34,3 +34,19 @@ weather_data = {
     { temperature: 60, conditions: "Rainy", precipitation: 0.9 }
   ]
 }
+#write the current weather and display it
+temp = weather_data[:"current"][:"temperature"]
+cond = weather_data[:"current"][:"conditions"]
+puts "The current weather is #{temp} and #{cond}"
+
+#Write a weather summary
+for weather in weather_data[:"forecast"]
+  description = "The temperature is #{weather[:"temperature"]} degrees and #{weather[:"conditions"]}"
+  if weather[:"conditions"] != "Rainy" && weather[:"precipitation"] >= 0.5
+    description = description + " with a #{(weather[:"precipitation"]*100).floor}% chance of rain"
+  end
+  puts description
+end
+
+#include rain if over 50% and not already raining
+
